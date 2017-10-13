@@ -1,0 +1,335 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E40C54E31F8F61A100FB3432 /* Chache.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40C54E21F8F61A100FB3432 /* Chache.swift */; };
+		E40C54E71F8F866900FB3432 /* FullIImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40C54E61F8F866900FB3432 /* FullIImageViewController.swift */; };
+		E4CE1EF61F8F177300980F32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CE1EF51F8F177300980F32 /* AppDelegate.swift */; };
+		E4CE1EF81F8F177300980F32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CE1EF71F8F177300980F32 /* ViewController.swift */; };
+		E4CE1EFB1F8F177300980F32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4CE1EF91F8F177300980F32 /* Main.storyboard */; };
+		E4CE1EFD1F8F177300980F32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4CE1EFC1F8F177300980F32 /* Assets.xcassets */; };
+		E4CE1F001F8F177300980F32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4CE1EFE1F8F177300980F32 /* LaunchScreen.storyboard */; };
+		E4CE1F091F8F182200980F32 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CE1F081F8F182200980F32 /* ImageTableViewCell.swift */; };
+		E4CE1F0B1F8F19D200980F32 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CE1F0A1F8F19D200980F32 /* Service.swift */; };
+		E4CE1F0D1F8F231300980F32 /* UIImageView+CustomDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CE1F0C1F8F231300980F32 /* UIImageView+CustomDownload.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E40C54E21F8F61A100FB3432 /* Chache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chache.swift; sourceTree = "<group>"; };
+		E40C54E61F8F866900FB3432 /* FullIImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullIImageViewController.swift; sourceTree = "<group>"; };
+		E4CE1EF21F8F177300980F32 /* ImageDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4CE1EF51F8F177300980F32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E4CE1EF71F8F177300980F32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E4CE1EFA1F8F177300980F32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E4CE1EFC1F8F177300980F32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E4CE1EFF1F8F177300980F32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E4CE1F011F8F177300980F32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4CE1F081F8F182200980F32 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		E4CE1F0A1F8F19D200980F32 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		E4CE1F0C1F8F231300980F32 /* UIImageView+CustomDownload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+CustomDownload.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4CE1EEF1F8F177300980F32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E4CE1EE91F8F177300980F32 = {
+			isa = PBXGroup;
+			children = (
+				E4CE1EF41F8F177300980F32 /* ImageDownloader */,
+				E4CE1EF31F8F177300980F32 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E4CE1EF31F8F177300980F32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4CE1EF21F8F177300980F32 /* ImageDownloader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4CE1EF41F8F177300980F32 /* ImageDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				E4CE1F071F8F17A900980F32 /* Image Download */,
+				E4CE1EF51F8F177300980F32 /* AppDelegate.swift */,
+				E4CE1EF71F8F177300980F32 /* ViewController.swift */,
+				E4CE1EF91F8F177300980F32 /* Main.storyboard */,
+				E4CE1EFC1F8F177300980F32 /* Assets.xcassets */,
+				E4CE1EFE1F8F177300980F32 /* LaunchScreen.storyboard */,
+				E4CE1F011F8F177300980F32 /* Info.plist */,
+				E4CE1F081F8F182200980F32 /* ImageTableViewCell.swift */,
+				E40C54E61F8F866900FB3432 /* FullIImageViewController.swift */,
+			);
+			path = ImageDownloader;
+			sourceTree = "<group>";
+		};
+		E4CE1F071F8F17A900980F32 /* Image Download */ = {
+			isa = PBXGroup;
+			children = (
+				E4CE1F0A1F8F19D200980F32 /* Service.swift */,
+				E4CE1F0C1F8F231300980F32 /* UIImageView+CustomDownload.swift */,
+				E40C54E21F8F61A100FB3432 /* Chache.swift */,
+			);
+			name = "Image Download";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4CE1EF11F8F177300980F32 /* ImageDownloader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4CE1F041F8F177300980F32 /* Build configuration list for PBXNativeTarget "ImageDownloader" */;
+			buildPhases = (
+				E4CE1EEE1F8F177300980F32 /* Sources */,
+				E4CE1EEF1F8F177300980F32 /* Frameworks */,
+				E4CE1EF01F8F177300980F32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageDownloader;
+			productName = ImageDownloader;
+			productReference = E4CE1EF21F8F177300980F32 /* ImageDownloader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4CE1EEA1F8F177300980F32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = vishal;
+				TargetAttributes = {
+					E4CE1EF11F8F177300980F32 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E4CE1EED1F8F177300980F32 /* Build configuration list for PBXProject "ImageDownloader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E4CE1EE91F8F177300980F32;
+			productRefGroup = E4CE1EF31F8F177300980F32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4CE1EF11F8F177300980F32 /* ImageDownloader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4CE1EF01F8F177300980F32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4CE1F001F8F177300980F32 /* LaunchScreen.storyboard in Resources */,
+				E4CE1EFD1F8F177300980F32 /* Assets.xcassets in Resources */,
+				E4CE1EFB1F8F177300980F32 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4CE1EEE1F8F177300980F32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4CE1F091F8F182200980F32 /* ImageTableViewCell.swift in Sources */,
+				E4CE1F0B1F8F19D200980F32 /* Service.swift in Sources */,
+				E4CE1EF81F8F177300980F32 /* ViewController.swift in Sources */,
+				E40C54E31F8F61A100FB3432 /* Chache.swift in Sources */,
+				E4CE1EF61F8F177300980F32 /* AppDelegate.swift in Sources */,
+				E4CE1F0D1F8F231300980F32 /* UIImageView+CustomDownload.swift in Sources */,
+				E40C54E71F8F866900FB3432 /* FullIImageViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E4CE1EF91F8F177300980F32 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4CE1EFA1F8F177300980F32 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E4CE1EFE1F8F177300980F32 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4CE1EFF1F8F177300980F32 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E4CE1F021F8F177300980F32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E4CE1F031F8F177300980F32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E4CE1F051F8F177300980F32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ImageDownloader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vishal.ImageDownloader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E4CE1F061F8F177300980F32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ImageDownloader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vishal.ImageDownloader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4CE1EED1F8F177300980F32 /* Build configuration list for PBXProject "ImageDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4CE1F021F8F177300980F32 /* Debug */,
+				E4CE1F031F8F177300980F32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4CE1F041F8F177300980F32 /* Build configuration list for PBXNativeTarget "ImageDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4CE1F051F8F177300980F32 /* Debug */,
+				E4CE1F061F8F177300980F32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4CE1EEA1F8F177300980F32 /* Project object */;
+}

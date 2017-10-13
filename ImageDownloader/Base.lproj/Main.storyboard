@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qss-VS-gF7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImageDownloader" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="105" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="670-DB-GCp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageTableViewCell" rowHeight="120" id="uOH-Yo-47z" customClass="ImageTableViewCell" customModule="ImageDownloader" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uOH-Yo-47z" id="ShU-Ga-Bmm">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunbeam" translatesAutoresizingMaskIntoConstraints="NO" id="6SG-Ig-PhE">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="6SG-Ig-PhE" secondAttribute="bottom" id="4Bg-mP-0gh"/>
+                                                <constraint firstItem="6SG-Ig-PhE" firstAttribute="leading" secondItem="ShU-Ga-Bmm" secondAttribute="leading" id="Y5o-1c-SSo"/>
+                                                <constraint firstItem="6SG-Ig-PhE" firstAttribute="top" secondItem="ShU-Ga-Bmm" secondAttribute="top" id="i6C-88-okx"/>
+                                                <constraint firstAttribute="trailing" secondItem="6SG-Ig-PhE" secondAttribute="trailing" id="tK3-BL-5YC"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imgBackground" destination="6SG-Ig-PhE" id="wDd-TM-OzS"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="69a-wE-u5j"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="L0j-d7-f69"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="670-DB-GCp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="07t-qI-FXX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="670-DB-GCp" secondAttribute="bottom" id="QMs-Y1-d9P"/>
+                            <constraint firstAttribute="trailing" secondItem="670-DB-GCp" secondAttribute="trailing" id="h7C-fi-vh1"/>
+                            <constraint firstItem="670-DB-GCp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="xvh-IZ-HhT"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="cbx-tA-jgX"/>
+                    <connections>
+                        <outlet property="tblImage" destination="670-DB-GCp" id="KxW-hy-BpE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1351.2" y="-118.29085457271366"/>
+        </scene>
+        <!--FullI Image View Controller-->
+        <scene sceneID="5AY-sp-o1R">
+            <objects>
+                <viewController storyboardIdentifier="FullIImageViewController" id="6tz-3a-SrS" customClass="FullIImageViewController" customModule="ImageDownloader" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qkh-2n-b6Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="PZh-pm-xMI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8lP-Cw-8c5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Bv-9g-KyD">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5Bv-9g-KyD" firstAttribute="leading" secondItem="8lP-Cw-8c5" secondAttribute="leading" id="1DF-68-2MW"/>
+                            <constraint firstItem="5Bv-9g-KyD" firstAttribute="top" secondItem="qkh-2n-b6Q" secondAttribute="bottom" id="WUq-f6-dXG"/>
+                            <constraint firstItem="PZh-pm-xMI" firstAttribute="top" secondItem="5Bv-9g-KyD" secondAttribute="bottom" id="k9r-RE-QJu"/>
+                            <constraint firstAttribute="trailing" secondItem="5Bv-9g-KyD" secondAttribute="trailing" id="v2p-cd-elJ"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <connections>
+                        <outlet property="fullImageView" destination="5Bv-9g-KyD" id="XaJ-oX-VC3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z4T-fE-XPj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-533.60000000000002" y="-112.89355322338831"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="79F-fJ-fod">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qss-VS-gF7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="p8v-R1-DrI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4FH-2a-3Rh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VTc-lM-OPk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2290.4000000000001" y="-118.29085457271366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sunbeam" width="16" height="16"/>
+    </resources>
+</document>
